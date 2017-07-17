@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--literally this code https://xkcd.com/1513/-->
+<!-- CSS is stored externally -->
+<head>
+	<meta charset="UTF-8" />
+	<title>License - Your Name</title>
+	<meta name="description" content="Licensing information for the Website" />
+<!-- Lets Grab all those external resources-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	
+	<!--Favicon stuff-->
+	<!--Needs to be in every header to make sure that apple and microsoft play along nicely :D -->
+	
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+	<!--favicon stuff done-->
+	
+	<!--First JavaScript!-->
+	
+	<!--It handles the user clicking on the title <div> -->
+	<!--https://www.w3schools.com/howto/howto_js_popup.asp-->
+<script>
+// When the user clicks on <div>, open the popup
+function popFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+<style>
+	/* NOTE: margins and paddings are TOP/RIGHT/BOTTOM/LEFT 
+	*/
+/*with should be changed when text length changes*/
+.popup .popuptext {
+	width: 700px;
+	bottom: 110%;
+    left: 50%;
+	right: 150px;
+    margin-left: -160pt;
+}
+/*popup arrow settings*/
+.popup .popuptext::after {
+    top: 100%;
+    left: 5.5%;
+    margin-left: -5px;
+    border-width: 5px;
+}
+#licensewrapper {
+	text-align: center
+}
+#license {
+	background-color: #00bdfc;
+	margin: 5pt;
+	padding: 5pt;
+	border-radius: 10px ;
+	display: inline-block;
+}
+#license2 {
+	margin: 5pt;
+	padding: 5pt;
+    width: 50vw; 
+}
+.cctext {
+	font-size: 30pt;
+	margin: 5pt;
+	padding 5pt;
+}
+.ccicon {
+	margin: 0.25%;
+	padding: 0.25%;
+	height: 70pt;
+}
+.subhead {
+	padding: 15px;
+	margin: 15px;
+	font-size: 25pt;
+	padding-bottom: 2px;
+}
+
+.explanation {
+	text-align: justify;
+	padding: 15px;
+	margin: 15px;
+	font-size: 20pt;
+	padding-left:2em;
+	padding-top:5px;
+	
+}
+
+.maintxt {
+	padding: 15px;
+	margin: 15px;
+}
+</style>
+</head>
+
+<body >
+<!--navbar credit to https://www.w3schools.com/css/css_navbar.asp -->
+
+<!--This is the page navbar, other pages of the same site are generally linked here-->
+<!--Any change to this needs to be updated to all the other pages-->
+<!--=============================================================-->
+<ul class="navbar merriweather">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Instagram.html">Instagram</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown activenav">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a class="activedrop" href="#">Licensing</a>
+      <a href="err0rs.html">Errors</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+<!--=============================================================-->
+
+<!--Actual content (finally!)-->
+
+<div class="content shade">
+<!-- The html for the title text hurts my brain. it looks so simple and mundane on the page but is so complicated in here-->
+<!-- Every single thing about it is terrible. That inline CSS that i didnt manage to port for example -->
+
+	<div class="popup"> <h1 class="titletxt merriweather"><a class="titlelink" href="home.html">Your Name</a><img src="placeholder_profile.png" alt="placeholder face" style="width:40px;height:40px;float:left;margin: 2px 0px 20px 3px;border-radius: 5px;" onclick="popFunction()"></h1>
+	<h2 class="subtitletxt merriweather" style="font-size:20pt">Licensing</h2> <span class="popuptext merriweather" id="myPopup">This License is the first big Legal document that ive read and <i>attempted</i> to understand</span></div>
+	
+	<div id="licensewrapper">    
+		<a href="https://creativecommons.org/licenses/by-sa/4.0/">
+		<div id="license">
+		<div id="license2" >	
+		<img class="ccicon" alt="cc-icon" src="http://i.imgur.com/apEdjRk.png"> <img class="ccicon" alt="attribution-icon" src="http://i.imgur.com/rpDY437.png"> <img class="ccicon" alt="Share Alike-icon" src="http://i.imgur.com/G8U7rPd.png">
+		<p class="cctext noshade merriweather"><b>Attribution-&#8288;ShareAlike 4.0<br>International (CC&nbsp;BY-&#8288;SA&nbsp;4.0)</b> </p>
+		</div>
+		</div>
+		</a>
+	</div>
+	<p class="maintxt sourcesans">Because I believe in the freedom of the Internet, and also because i often find myself using other works licensed
+	under Creative Commons, i have decided to release the code of this website under <span class="txt-accent"><b>CC BY-SA 4.0</b></span>
+	for people that might have trouble starting out with HTML and CSS. <br><br> You can use this as a framework of sorts that is way less complex than most of what you find on big websites 
+	(Go take a look at the sourcecode of the <a href="https://www.google.ch/">google homepage</a> if you want to have an <a href="https://xkcd.com/1605/">existential crisis</a>)
+	You will learn much more than with something like WordPress. Basically i want you to mess around with my code, create new things and then show me what you made.<br><br> 
+	Below are more informations on how the license works with this site and <a href="#scope"><i>what</i></a> is actually being licensed here. 
+    If you want to use my code, you must read both this page and the <i class="txt-accent">actual </i> Creative Commons text. You can get to the CC Website quickly by clicking on the 
+	big blue banner above</p>
+	<h3 class="sourcesans subhead" id="scope"> Scope </h3>
+	<p class="explanation sourcesans">This <b class="txt-accent">CC</b> License applies to the <b class="txt-code txt-accent">HTML</b> and <b class="txt-code txt-accent">CSS</b> code, but <strong>NOT</strong> to any content or 
+	media hosted on this page or externally. For example, you are not allowed to redistribute the picture of my face in the top left of the page, also you need to write your own text in the pages before
+	making it public. This CC&nbsp;BY&#8288;-&#8288;SA&nbsp;4&#8288;.&#8288;0 license applies to the html code itself and not what it is presenting. <b>There are parts inside this websites code that i do not own and thus cannot license</b> (google fonts, instagram 
+	embeds, snippets from w3schools and stuff like that). To make it easier, you can <a href="Contact.html">contact me</a> and i will send you all the files that you can use, 
+	with the content that is not licensed under CC removed already.</p>
+	
+	<h3 class="sourcesans subhead" id="youcan" > What you can do:</h3>
+	<p class="explanation sourcesans">You can <span class="txt-accent"><b>share, copy, adapt, transform, edit, create derivatives, earn money with, sell, and use the code however you want.</b></span> And as 
+	long as you follow the license terms, nobody can stop you from doing that. Not me, not somebody else. Nobody. You are free and that is beautiful. Now go fly.</p>
+	
+	<h3 class="sourcesans subhead" id="yougotta">What you have to do:</h3>
+	<p class="explanation sourcesans">You have to provide proper <a href="https://wiki.creativecommons.org/wiki/License_Versions#Detailed_attribution_comparison_chart">Attribution.</a> Meaning, you have to Credit my Name, and include a notice that refers
+	to the license. Also you have to include a URL/Link to the original content in a manner that is reasonable (on a website like here, a footer with a hyperlink would be pretty reasonable) If i request that you remove the attribution you have to
+	remove it <span class="txt-accent">"to the extent reasonably practicable"</span> Further, you have to clearly state that you using my work does not constitute me endorsing you	
+	<br><br>And probably the most important thing you have to do besides Attribution is to <b class="txt-accent">Share Alike</b>. That means you have to release whatever you make out of my code under the same or a 
+	<a href="https://creativecommons.org/share-your-work/licensing-considerations/compatible-licenses/">compatible license</a>. Basically, you have to give others the same freedoms that i am giving you.</p>
+	
+	<h3 class="sourcesans subhead" id="youcant">What you cannot do:</h3>
+	<p class="explanation sourcesans"><i class="hachiroku">Sometimes you have to limit freedom to protect it.</i> The CC License does not allow you to place licensed works under DRM, Copy protection
+	or any other effective technological measures or legal terms that restrict people in exercising their rights granted by the license. This is very important, <b>if you do that kind of stuff and dont fix it within 30 days
+	the license will terminate automatically and you will lose the right to use, share or edit any of my code.</b></p>
+</div>
+<!-- This is where the content ends and the footer begins-->
+	
+<!--this image breaks things for some reason-->
+	<!-- <img src="http://i.imgur.com/D6FYlM7.jpg" alt="profilbild zeigt stilisiertes gesicht" style="width:128px;height:128px;-->
+
+	<!--just for testing fonts, ill leave it here anyway. commented out with below line-->
+
+	<!--
+		<div class="testarea">
+			<h2 class="sans-serif">FONT TEST:</h2>
+			<h2 class="sans-serif">SANS SERIF sans serif </h2>
+			<h2 class="sans-serif txt-accent">SANS SERIF lightblue </h2>
+			<h2 class="serif">SERIF serif</h2>
+			<h2 class="cursive">Cursive CURSIVE </h2>
+			<h2 class="fantasy">FANTASY Fantasy</h2>
+			<h2 class="monospace">monospace MONOSPACE</h2>
+			<h2 class="merriweather">merriweather SANS</h2>
+			<h2 class="sourcesans">SOURCE Sans</h2>
+		</div>
+	-->
+
+<!--footer is always on the bottom of the screen thanks to flex in the content-->
+
+<footer id="footer" class="footer fshade">
+
+	<p class="sans-serif txt-accent txt-footer">Background image is hosted<a href="http://imgur.com/1OENL6b"> here</a></p>
+	<p class="sans-serif txt-accent txt-footer">HTML/CSS by Daniel Busato with help of many snippets from various websites</p>
+	<p class="sans-serif txt-accent txt-footer"><span class="hachiroku">Warning:</span> Being subjected to this site for extended periods of time may result in a <span class="hachiroku">fatal dose of sarcasm</span>. More info in html comments</p>
+
+</footer>
+
+</body>
+</html>

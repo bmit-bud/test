@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--literally this code https://xkcd.com/1513/-->
+<!-- CSS is stored externally -->
+<head>
+	<meta charset="UTF-8" />
+	<title>451 Unavailable For Legal Reasons - Your Name</title>
+	<meta name="description" content="HTTP Error Page: 451 Unavailable For Legal Reasons" />
+<!-- Lets Grab all those external resources-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	
+	<!--Favicon stuff-->
+	<!--Needs to be in every header to make sure that apple and microsoft play along nicely :D -->
+	
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+	<!--favicon stuff done-->
+	
+	<!--First JavaScript!-->
+	
+	<!--It handles the user clicking on the title <div> -->
+	<!--https://www.w3schools.com/howto/howto_js_popup.asp-->
+<script>
+// When the user clicks on <div>, open the popup
+function popFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+<style>
+/*with should be changed when text length changes*/
+.popup .popuptext {
+	width: 400px;
+	bottom: 110%;
+    left: 50%;
+	right: 150px;
+    margin-left: -160pt;
+}
+/*popup arrow settings*/
+.popup .popuptext::after {
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+}
+/* NOTE: margins and paddings are TOP/RIGHT/BOTTOM/LEFT 
+*/
+.txt404 {
+	font-size:182pt;
+	margin:0px;
+	padding-top:50pt;
+	padding-left: 6pt;
+	line-height:50%;
+	text-align: center;
+}
+.filenotfound {
+	padding: 15px 5px 0px 0px;
+	margin: 15px 0px 20px 4px;
+	font-size:48pt;
+	text-align:center
+}
+.b404 {
+	padding: 15px 15px 15px 15px;
+	margin: 15px 15px 15px 15px;
+	width: 75%
+}
+.centered {
+	position: fixed;
+	top: 50%;
+  left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+/*this is the least practical class name that i could have picked but i think it describes it pretty well*/
+.centered-but-not-really {
+	position: fixed;
+	top: 70%;
+	left: 50%;
+/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+.explanation {
+	text-align: center;
+	
+}
+
+</style>
+</head>
+
+<body >
+<!--navbar credit to https://www.w3schools.com/css/css_navbar.asp -->
+
+<!--This is the page navbar, other pages of the same site are generally linked here-->
+<!--Any change to this needs to be updated to all the other pages-->
+<!--=============================================================-->
+<ul class="navbar merriweather">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Instagram.html">Instagram</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="license.html">Licensing</a>
+      <a href="err0rs.html">Errors</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+<!--=============================================================-->
+
+<!--Actual content (finally!)-->
+
+<div class="content shade">
+<!-- The html for the title text hurts my brain. it looks so simple and mundane on the page but is so complicated in here-->
+<!-- Every single thing about it is terrible. That inline CSS that i didnt manage to port for example -->
+
+	<div class="popup"> <h1 class="titletxt merriweather"><a class="titlelink" href="home.html">Your Name</a><img src="placeholder_profile.png" alt="placeholder face" style="width:40px;height:40px;float:left;margin: 2px 0px 20px 3px;border-radius: 5px;" onclick="popFunction()"></h1>
+	<h2 class="subtitletxt sourcesans" style="font-size:25pt">Err<span class="txt-accent">0</span>r</h2> <span class="popuptext merriweather" id="myPopup">If it wasnt for either of the below reasons, i dont think i would <i>want</i> to know what it is</span></div>
+	
+	<div class="b404 centered">
+	<h1 class="sourcesans txt404">4<span class="txt-accent">5</span>1</h1>
+	<p style="font-size:30pt" onclick="alert('https://en.wikipedia.org/wiki/Fahrenheit_451');" class="sourcesans filenotfound"><b>Unavailable For Legal Reasons</b> </p>
+	<p class="explanation sourcesans" style="font-size: 21pt; line-height: 90%"><b>It is likely illegal to serve this content in your location. If you dont live in a state that censors its media, copyright infringement is probably be the reason.</b></p>
+	<p class="explanation sourcesans shade2" style="font-size:10pt; "><b>If you belive that all content behind this link is legal in your IP location, send me an email with the link of that page: 
+	<a style="color: red" href=""> ///Contact///</a><br>I dont feel like joking in this context, so yeah: <a style="color: red;" href="https://youtu.be/LkIWmsP3c_s"> ///link/// </a></b></p>
+
+	</div>	
+	
+	</div>
+
+<!-- This is where the content ends and the footer begins-->
+	
+<!--this image breaks things for some reason-->
+	<!-- <img src="http://i.imgur.com/D6FYlM7.jpg" alt="profilbild zeigt stilisiertes gesicht" style="width:128px;height:128px;-->
+
+	<!--just for testing fonts, ill leave it here anyway. commented out with below line-->
+
+	<!--
+		<div class="testarea">
+			<h2 class="sans-serif">FONT TEST:</h2>
+			<h2 class="sans-serif">SANS SERIF sans serif </h2>
+			<h2 class="sans-serif txt-accent">SANS SERIF lightblue </h2>
+			<h2 class="serif">SERIF serif</h2>
+			<h2 class="cursive">Cursive CURSIVE </h2>
+			<h2 class="fantasy">FANTASY Fantasy</h2>
+			<h2 class="monospace">monospace MONOSPACE</h2>
+			<h2 class="merriweather">merriweather SANS</h2>
+			<h2 class="sourcesans">SOURCE Sans</h2>
+		</div>
+	-->
+
+<!--footer is always on the bottom of the screen thanks to flex in the content-->
+
+<footer class="footer fshade">
+	<p class="sans-serif txt-accent txt-footer">Background image is hosted<a href="http://imgur.com/1OENL6b"> here</a></p>
+	<p class="sans-serif txt-accent txt-footer">HTML/CSS by Daniel Busato with help of many snippets from various websites</p>
+	<p class="sans-serif txt-accent txt-footer"><span class="hachiroku">Warning:</span> Being subjected to this site for extended periods of time may result in a <span class="hachiroku">fatal dose of sarcasm</span>. More info in html comments</p>
+
+</footer>
+
+</body>
+</html>

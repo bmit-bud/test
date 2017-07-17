@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--literally this code https://xkcd.com/1513/-->
+<!-- CSS is stored externally -->
+<head>
+	<meta charset="UTF-8" />
+	<title>About - Your Name</title>
+	<meta name="description" content="&quot;About&quot; page for This website" />
+<!-- Lets Grab all those external resources-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--Done!-->	
+	
+	<!--Favicon stuff-->
+	<!--Needs to be in every header to make sure that apple and microsoft play along nicely :D -->
+	
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+	<!--favicon stuff done-->
+	<!--First JavaScript!-->
+	
+	<!--It handles the user clicking on the title <div> -->
+	<!--https://www.w3schools.com/howto/howto_js_popup.asp-->
+<script>
+// When the user clicks on <div>, open the popup
+function popFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+<style>
+/*with should be changed when text length changes*/
+.popup .popuptext {
+	width: 260px;
+	bottom: 110%;
+    left: 50%;
+	right: 150px;
+    margin-left: -160pt;
+}
+/*popup arrow settings*/
+.popup .popuptext::after {
+    top: 100%;
+    left: 16%;
+    margin-left: -5px;
+    border-width: 5px;
+</style>
+</head>
+
+<body >
+<!--navbar credit to https://www.w3schools.com/css/css_navbar.asp -->
+
+<!--This is the page navbar, other pages of the same site are generally linked here-->
+<!--Any change to this needs to be updated to all the other pages-->
+<!--=============================================================-->
+<ul class="navbar merriweather">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="Instagram.html">Instagram</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a class="activenav" href="About.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="license.html">Licensing</a>
+      <a href="err0rs.html">Errors</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+<!--=============================================================-->
+
+<!--Actual content (finally!)-->
+
+<div class="shade content">
+<!-- The html for the title text hurts my brain. it looks so simple and mundane on the page but is so complicated in here-->
+<!-- Every single thing about it is terrible. That inline CSS that i didnt manage to port for example -->
+
+	<div class="popup"> <h1 class="titletxt merriweather"><a class="titlelink" href="home.html">Your Name</a> <img src="placeholder_profile.png" alt="placeholder face" style="width:40px;height:40px;float:left;margin: 2px 0px 20px 3px;border-radius: 5px;" onclick="popFunction()"></h1>
+	<h2 class="subtitletxt merriweather" style="font-size:20pt">About</h2> <span class="popuptext merriweather" id="myPopup">What is this about page about?</span></div>
+
+	<p class="sourcesans maintxt">This is the personal website of <span class="txt-accent">Your Name</span> and below you can read how it all began<br><br>On my second day at Espas, the 
+	<span class="txt-accent">19th of April 2017.</span> I was Tasked with building my own Website. So i started with the html template and CSS font families that i had used a couple times before on other small projects.
+	<br><br>Continuing work on the site, i often thought of something that i wanted to do, like a fullscreen background image or a footer that stays at the bottom of the page.
+	After googling how to do such things, i added them to my site. Because of that, the original html file with its integrated CSS grew quickly into something that i would classify as "a big mess" I also had to have 
+	multiple pages, so i split it up into <span class="txt-accent">index.html</span> and <span class="txt-accent">style.css</span> so the CSS file could evolve by itself into something i could safely consider to be 
+	an even bigger mess. <br><br>After the split, the site could grow efficiently with one shared CSS file to handle the stuff that is the same everywhere. This "about" and a "contact" page were added, being the first to use 
+	the external CSS. Also a ton of HTTP error code pages were added and littered with easter eggs. Among those pages was everything from the well known <span class="txt-accent">404 -file not found</span> 
+	to rather specific stuff like <span class="txt-accent">414 -Request URL Too Long</span> or <span class="txt-accent">451 - Unavailable For Legal Reasons</span><br><br> After that, there were some design-changes:
+	a blur effect on the background image or some text shadowing. Also the Navbar got slightly brighter. Speaking of design, an instagram page was also added and filled with embedded posts. <br><br> After that, i reworked the footer
+	which was originally made with <span class="txt-accent txt-code">&lt;h6&gt;</span> but that made no sense as it is a footer and not a heading. So i had to redo the formatting the <strong>proper</strong> way, with font sizes and such.
+	also the <span class="txt-accent txt-code">&lt;center&gt;</span> i originally used was deprecated so i had to replace it with some CSS: <span class="txt-code txt-accent">text-align: center; </span>
+	</p>
+
+
+</div>
+<!-- This is where the content ends and the footer begins-->
+	
+<!--this image breaks things for some reason-->
+	<!-- <img src="http://i.imgur.com/D6FYlM7.jpg" alt="profilbild zeigt stilisiertes gesicht" style="width:128px;height:128px;-->
+
+	<!--just for testing fonts, ill leave it here anyway. commented out with below line-->
+
+	<!--
+		<div class="testarea">
+			<h2 class="sans-serif">FONT TEST:</h2>
+			<h2 class="sans-serif">SANS SERIF sans serif </h2>
+			<h2 class="sans-serif txt-accent">SANS SERIF lightblue </h2>
+			<h2 class="serif">SERIF serif</h2>
+			<h2 class="cursive">Cursive CURSIVE </h2>
+			<h2 class="fantasy">FANTASY Fantasy</h2>
+			<h2 class="monospace">monospace MONOSPACE</h2>
+			<h2 class="merriweather">merriweather SANS</h2>
+			<h2 class="sourcesans">SOURCE Sans</h2>
+		</div>
+	-->
+
+<!--footer is always on the bottom of the screen thanks to flex in the content-->
+
+<footer class="footer fshade">
+	<p class="sans-serif txt-accent txt-footer">Background image is hosted<a href="http://imgur.com/1OENL6b"> here</a></p>
+	<p class="sans-serif txt-accent txt-footer">HTML/CSS by Daniel Busato with help of many snippets from various websites</p>
+	<p class="sans-serif txt-accent txt-footer"><span class="hachiroku">Warning:</span> Being subjected to this site for extended periods of time may result in a <span class="hachiroku">fatal dose of sarcasm</span>. More info in html comments</p>
+
+</footer>
+
+</body>
+</html>

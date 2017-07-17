@@ -1,0 +1,312 @@
+/*this is the first time im using seperate CSS and HTML. This could be great***/
+/*or it could crash and burn */
+/*It's probably more like this: https://xkcd.com/1513/ */
+
+	/* ==FONTS== */
+		.sans-serif				{ font-family: calibri, verdana, sans-serif; color: #f7f7f7; }
+		.serif					{ font-family: serif; color: #f7f7f7; }
+		.cursive				{ font-family: cursive; color: #f7f7f7; }
+		.fantasy				{ font-family: fantasy; color: #f7f7f7; }
+		.monospace				{ font-family: monospace; color: #f7f7f7; }
+		.merriweather			{ font-family: 'Merriweather Sans', arial, sans-serif; color: #f7f7f7; }
+		.sourcesans				{ font-family: 'Source Sans Pro', sans-serif; color: #f7f7f7; }
+		.txt-code				{ font-family: 'Cutive Mono', monospace; color: #f7f7f7; }
+	/* --modifier-- */
+		.txt-lightblue	{ color: #44dcff; }
+		.txt-accent		{ color: #44dcff; }
+		.txt-red		{ color: red }
+		.hachiroku		{ color: #00AE86}
+		.shade			{ text-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.90); }
+		.shade2			{ text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.60) }
+		.fshade			{ text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.70); }
+		.noshade		{ text-shadow: none}
+
+		
+	/* ==LINK COLOR==
+	* removed " background-color: transparent; " put it back in if its messed up. like, not being transparent...
+	* pallette:
+	* https://coolors.co/120a35-27b7f9-147fcc-03586d-097fa0 */
+	
+		a:link {
+			color: #27B7F9;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #097FA0;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #147FCC;
+			text-decoration: none;
+		}
+		a:active {
+			color: #51CC14;
+			text-decoration: none;
+		}
+		
+	/*TITLE LINK COLOR*/
+	/*supposed to make sure that the title text is white even though it is a link*/
+	
+	.titlelink:link {
+			color: #f7f7f7;
+			text-decoration: none;
+	}
+	.titlelink:visited {
+			color: #f7f7f7;
+			text-decoration: none;
+	}
+	.titlelink:hover {
+			color: #f7f7f0;
+			text-decoration: none;
+	}
+	.titlelink:active {
+			color: #44dcff;
+			text-decoration: none;
+	}
+	
+	
+	/*SELECTION COLOR*/
+
+	
+	/*** Works on common browsers ***/
+	::selection {
+		background-color: #21f3ff;
+		color: #fff;
+	}
+
+	/*** Mozilla based browsers ***/
+	::-moz-selection {
+		background-color: #21f3ff;
+		color: #fff;
+	}
+
+	/*** For Other Browsers (is o for opera?) ***/
+	::-o-selection {
+		background-color: #21f3ff;
+		color: #fff;
+	}
+	/*** Microsoft: IE, EDGE, special stuff ***/
+	::-ms-selection {
+		background-color: #21f3ff;
+		color: #fff;
+	}
+
+	/*** For Webkit: Apple software and others (tesla onboard entertainment too, i think)***/
+	::-webkit-selection {
+		background-color: #21f3ff;
+		color: #fff;
+	}
+
+	/* Full Screen Background */
+	/* credit to https://css-tricks.com/perfect-full-page-background-image/ */
+	/* old background: http://i.imgur.com/50G9bUK.jpg */
+	
+		html { 
+		background: url(placeholder_bg.png) no-repeat center center fixed; 
+		background-color:#44474c;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+
+	
+	/* CSS for random stuff including a sticky footer, text formatting and the navbar
+	/*
+	/* "its just a bunch of classes"
+	/*
+	/* Sticky footer cred:
+	/* http://codepen.io/chriscoyier/pen/RRbKrL */
+	/* NOTE: margins and paddings are TOP/RIGHT/BOTTOM/LEFT 
+	*/
+	 
+  html {
+   height: 100%;
+ }
+  body {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(0, 0, 0, 0.11)
+ }
+  .content {
+   flex: 1;
+   padding: 40px;
+   padding-top: 40px;
+ }
+  .testarea {
+   flex: 1;
+   padding: 30px;
+   background-color: transparent;
+ }
+  .footer {
+   padding: 5pt;
+   margin: 1pt;
+   text-align: center;
+ }
+  * {
+   box-sizing: border-box;
+ }
+  body {
+   margin: 0;
+ }
+  .titletxt {
+   margin: 0 0 0px 0;
+   line-height: 90%;
+   font-size:40pt;
+ }
+  .subtitletxt {
+   margin: 2px 0px 25pt 46px;
+   line-height: 50%;
+   font-size:20pt;
+ }
+  .maintxt {
+   text-align: justify;
+   padding: 15px 5px 0px 0px;
+   margin: 15px 0px 20px 4px;
+   font-size: 20pt;
+ }
+ .csscheck {
+   display: none;
+}
+ .txt-footer {
+   font-size:8.5pt;
+   line-height: 100%;
+   margin: 0 0 0px 0;
+   padding: 0 0 0 0;
+   font-weight: bold;
+ }
+ 
+ 
+ 
+ /*===Stuff for the navbar====*/
+
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+    background-color: rgba(102, 102, 102, 0.5);
+    box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.40);
+	z-index:1;
+
+/*shadowing*/
+	
+/*makes for a fixed navbar*/
+/*(but you have to fix a ton of other things if you enable this)
+/*  
+	position: fixed;
+    top: 0;
+    width: 100%; 
+*/
+ }
+  .navbar li {
+    float: left;
+ }
+  .navbar li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .navbar li a:hover, .dropdown:hover .dropbtn {
+	border-bottom: 2px solid #d1d1d1;
+	background-color:rgba(135, 135, 135, 0.36);
+} 
+  .navbar li.dropdown {
+	  display: inline-block;
+ }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(145, 145, 145, 0.79);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: white !important;
+    padding: 12px 16px !important;
+    text-decoration: none !important;
+    display: block !important;
+}
+.dropdown-content a:hover {
+	border-bottom: 0px solid #29d8ff !important;
+    background-color: rgba(145, 145, 145, 0.85);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  .activenav {
+	border-bottom: 2px solid #29d8ff;
+    background-color: rgba(41, 216, 255, 0.1);
+    color: white;
+ }
+  .activenav:hover {
+	border-bottom: 2px solid #3dcbff !important;
+    background-color: rgba(41, 216, 255, 0.2) !important;
+ }
+  .activedrop {
+    background-color: rgba(0, 204, 255, 0.3);
+	border-bottom: 0px;
+  }
+  .activedrop:hover {
+    background-color: rgba(0, 204, 255, 0.5) !important;
+	border-bottom: 0px;
+  }
+/*
+/* Popup css 
+/* i think this is way too much code for a little easter egg. but who cares
+/* https://www.w3schools.com/howto/howto_js_popup.asp
+/*
+/* NOTE: margins and paddings are TOP/RIGHT/BOTTOM/LEFT 
+*/
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    background-color: #dbdbdb;
+    color: #44dcff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0px 8px 0px;
+    position: absolute;
+    z-index: 2;
+	text-shadow: none;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-color: #dbdbdb transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
