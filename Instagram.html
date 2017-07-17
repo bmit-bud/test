@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--literally this code https://xkcd.com/1513/-->
+<!-- CSS is stored externally -->
+<head>
+	<meta charset="UTF-8" />
+	<title>Instagram - Your Name</title>
+	<meta name="description" content="See Some Instagram posts By @busatodaniel" />
+<!-- Lets Grab all those external resources-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!--Uncomment to use online backup stylesheet-->
+	
+	<!--
+	
+	<link rel="stylesheet" type="text/css" href="http://busato.net/daniel/3/style.css"> 
+	
+	-->
+		
+	<!--Favicon stuff-->
+	<!--Needs to be in every header to make sure that apple and microsoft play along nicely :D -->
+	
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+	<!--favicon stuff done-->
+	
+	<!--First JavaScript!-->
+	
+	<!--It handles the user clicking on the title <div> -->
+	<!--https://www.w3schools.com/howto/howto_js_popup.asp-->
+<script>
+// When the user clicks on <div>, open the popup
+function popFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+<style>
+/*with should be changed when text length changes*/
+.popup .popuptext {
+	width: 600px;
+	bottom: 110%;
+    left: 50%;
+	right: 150px;
+    margin-left: -160pt;
+}
+/*popup arrow settings*/
+.popup .popuptext::after {
+    top: 100%;
+    left: 6%;
+    margin-left: -5px;
+    border-width: 5px;
+}
+	/* NOTE: margins and paddings are TOP/RIGHT/BOTTOM/LEFT 
+	*/
+.instapost {
+	margin: 0pt 5pt 0pt 5pt;
+	padding: 5pt 1pt 3pt 5pt; 
+	text-shadow: none; 
+}
+.instacontainer-main {
+    width: 95%;
+    padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.instaleft {
+    width: 50%;
+    background: transparent;
+    float: left;
+}
+.instaright {
+    margin-left: 50%;
+    background: transparent;
+}
+</style>
+</head>
+
+<body >
+<!--navbar credit to https://www.w3schools.com/css/css_navbar.asp -->
+
+<!--This is the page navbar, other pages of the same site are generally linked here-->
+<!--Any change to this needs to be updated to all the other pages-->
+<!--=============================================================-->
+<ul class="navbar merriweather">
+  <li><a href="home.html">Home</a></li>
+  <li><a class="activenav" href="Instagram.html">Instagram</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">More</a>
+    <div class="dropdown-content">
+      <a href="license.html">Licensing</a>
+      <a href="err0rs.html">Errors</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
+<!--=============================================================-->
+
+<!--Actual content (finally!)-->
+
+<div class="shade content">
+<!-- The html for the title text hurts my brain. it looks so simple and mundane on the page but is so complicated in here-->
+<!-- Every single thing about it is terrible. That inline CSS that i didnt manage to port for example -->
+
+	<div class="popup"> <h1 class="titletxt merriweather"><a class="titlelink" href="home.html">Your Name</a><img src="placeholder_profile.png" alt="placeholder face" style="width:40px;height:40px;float:left;margin: 2px 0px 20px 3px;border-radius: 5px;" onclick="popFunction()"> </h1>
+	<h2 class="subtitletxt merriweather" style="font-size:20pt">Instagram</h2> <span class="popuptext merriweather" id="myPopup">Instagram cannot be instant, there has to be ATLEAST a light-speed delay</span></div>
+
+	<p class="sourcesans maintxt">I dont think my use of instagram is quite like the average user, i generally dont feel the need to share my life and tell everybody what 
+	i have done in the last five minutes. So i use it as a public photo gallery for pictures either taken with my phone or my Canon D700. Here you can see some some of those images.
+	</p>
+<br>
+<br>
+<section class="instacontainer-main">
+	
+	<!--====LEFT COLLUM====-->
+	<div class="instaleft">
+
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>	
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>	
+
+		
+	</div>
+	
+	<!--====RIGHT COLLUM====-->
+	<div class="instaright">
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>		
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>		
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>
+		<div class="instapost">
+			paste your instagrm embed code here
+		</div>	
+	</div>
+	
+</section>
+
+</div>
+<!-- This is where the content ends and the footer begins-->
+	
+<!--this image breaks things for some reason-->
+	<!-- <img src="http://i.imgur.com/D6FYlM7.jpg" alt="profilbild zeigt stilisiertes gesicht" style="width:128px;height:128px;-->
+
+	<!--just for testing fonts, ill leave it here anyway. commented out with below line-->
+
+	<!--
+		<div class="testarea">
+			<h2 class="sans-serif">FONT TEST:</h2>
+			<h2 class="sans-serif">SANS SERIF sans serif </h2>
+			<h2 class="sans-serif txt-accent">SANS SERIF lightblue </h2>
+			<h2 class="serif">SERIF serif</h2>
+			<h2 class="cursive">Cursive CURSIVE </h2>
+			<h2 class="fantasy">FANTASY Fantasy</h2>
+			<h2 class="monospace">monospace MONOSPACE</h2>
+			<h2 class="merriweather">merriweather SANS</h2>
+			<h2 class="sourcesans">SOURCE Sans</h2>
+		</div>
+	-->
+
+<!--footer is always on the bottom of the screen thanks to flex in the content-->
+
+<footer class="fshade footer">
+
+	<p class="sans-serif txt-accent txt-footer">Background image is hosted<a href="http://imgur.com/1OENL6b"> here</a></p>
+	<p class="sans-serif txt-accent txt-footer">HTML/CSS by Daniel Busato with help of many snippets from various websites</p>
+	<p class="sans-serif txt-accent txt-footer"><span class="hachiroku">Warning:</span> Being subjected to this site for extended periods of time may result in a <span class="hachiroku">fatal dose of sarcasm</span>. More info in html comments</p>
+
+</footer>
+
+</body>
+</html>
